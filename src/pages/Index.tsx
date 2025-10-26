@@ -2,19 +2,19 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
-import logoPlaceholder from "@/assets/logo-placeholder.png";
+import logo from "@/assets/logo.png";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex flex-col overflow-hidden">
+      <section className="relative flex flex-col overflow-hidden">
         {/* Logo Area - White Background */}
-        <div className="bg-background py-16 md:py-20">
+        <div className="bg-background py-8 md:py-12">
           <div className="container mx-auto px-6 text-center animate-fade-in">
-            <div className="max-w-xl mx-auto">
+            <div className="max-w-lg mx-auto">
               <img 
-                src={logoPlaceholder} 
+                src={logo} 
                 alt="KTML Holdings - E-commerce & Retail Partnership" 
                 className="w-full h-auto"
               />
@@ -23,7 +23,7 @@ const Index = () => {
         </div>
         
         {/* Tagline Area - Navy Background */}
-        <div className="bg-gradient-to-br from-primary via-primary to-accent/10 py-12 md:py-16 flex-1 flex items-center">
+        <div className="bg-gradient-to-br from-primary via-primary to-accent/10 py-10 md:py-14 flex items-center">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-accent/5 via-transparent to-transparent pointer-events-none" />
           <div className="container mx-auto px-6 text-center relative z-10 animate-fade-in-delay">
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-primary-foreground/95 max-w-3xl mx-auto font-light leading-relaxed">
