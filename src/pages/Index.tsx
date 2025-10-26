@@ -10,7 +10,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative flex flex-col overflow-hidden">
         {/* Logo Area - White Background */}
-        <div className="bg-background py-4 md:py-6">
+        <div className="bg-background py-2 md:py-3">
           <div className="container mx-auto px-4 md:px-6 text-center animate-fade-in">
             <div className="max-w-lg mx-auto">
               <img 
@@ -25,7 +25,7 @@ const Index = () => {
         {/* Tagline Area - Solid Navy Background */}
         <div className="bg-primary py-10 md:py-14 flex items-center">
           <div className="container mx-auto px-4 md:px-6 text-center animate-fade-in-delay">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl text-primary-foreground/95 max-w-3xl mx-auto font-light leading-relaxed">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl text-primary-foreground/95 max-w-5xl mx-auto font-light leading-relaxed lg:whitespace-nowrap">
               E-commerce & Retail Partnership for Premium Brands
             </h1>
           </div>
@@ -53,52 +53,54 @@ const Index = () => {
             Get in Touch
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
-            <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-start space-x-4">
-                <Mail className="w-6 h-6 text-accent mt-1" />
-                <div>
-                  <h3 className="font-semibold text-lg mb-2 text-foreground">Email</h3>
-                  <a 
-                    href="mailto:partnerships@ktmlholdings.com" 
-                    className="text-muted-foreground hover:text-accent transition-colors"
-                  >
-                    partnerships@ktmlholdings.com
-                  </a>
+          <div className="flex flex-col gap-6 md:gap-8 mb-8 md:mb-12">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+              <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-start space-x-4">
+                  <Mail className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                  <div className="min-w-0">
+                    <h3 className="font-semibold text-lg mb-2 text-foreground">Email</h3>
+                    <a 
+                      href="mailto:partnerships@ktmlholdings.com" 
+                      className="text-muted-foreground hover:text-accent transition-colors break-words"
+                    >
+                      partnerships@ktmlholdings.com
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+
+              <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300">
+                <div className="flex items-start space-x-4">
+                  <Phone className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                  <div className="min-w-0">
+                    <h3 className="font-semibold text-lg mb-2 text-foreground">Phone</h3>
+                    <a 
+                      href="tel:+13232839499" 
+                      className="text-muted-foreground hover:text-accent transition-colors"
+                    >
+                      (323) 283-9499
+                    </a>
+                  </div>
+                </div>
+              </Card>
+            </div>
 
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300">
               <div className="flex items-start space-x-4">
-                <Phone className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold text-lg mb-2 text-foreground">Phone</h3>
-                  <a 
-                    href="tel:+13232839499" 
-                    className="text-muted-foreground hover:text-accent transition-colors"
-                  >
-                    (323) 283-9499
-                  </a>
+                <MapPin className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                <div className="min-w-0">
+                  <h3 className="font-semibold text-lg mb-2 text-foreground">Address</h3>
+                  <address className="text-muted-foreground not-italic">
+                    KTML Holdings LLC<br />
+                    2801 Ocean Park Blvd<br />
+                    Unit #2370<br />
+                    Santa Monica, CA 90405
+                  </address>
                 </div>
               </div>
             </Card>
           </div>
-
-          <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 mb-8 md:mb-12">
-            <div className="flex items-start space-x-4">
-              <MapPin className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="font-semibold text-lg mb-2 text-foreground">Address</h3>
-                <address className="text-muted-foreground not-italic">
-                  KTML Holdings LLC<br />
-                  2801 Ocean Park Blvd<br />
-                  Unit #2370<br />
-                  Santa Monica, CA 90405
-                </address>
-              </div>
-            </div>
-          </Card>
 
           <div className="text-center">
             <Button 
