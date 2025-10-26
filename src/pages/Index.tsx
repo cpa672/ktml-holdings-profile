@@ -8,23 +8,26 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-primary to-accent/20">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent" />
+      <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-primary/90">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-accent/5 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent" />
         
-        <div className="relative z-10 container mx-auto px-6 text-center animate-fade-in">
-          <div className="w-32 h-32 mx-auto mb-8 bg-white rounded-2xl shadow-2xl p-6 flex items-center justify-center">
-            <img 
-              src={logoPlaceholder} 
-              alt="KTML Holdings Logo" 
-              className="w-full h-full object-contain"
-            />
+        <div className="relative z-10 container mx-auto px-6 text-center animate-fade-in py-20">
+          {/* Logo Container */}
+          <div className="max-w-2xl mx-auto mb-12">
+            <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] p-8 md:p-12 backdrop-blur-sm border border-white/20">
+              <img 
+                src={logoPlaceholder} 
+                alt="KTML Holdings - E-commerce & Retail Partnership" 
+                className="w-full h-auto max-w-md mx-auto"
+              />
+            </div>
           </div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 tracking-tight">
-            KTML Holdings
-          </h1>
-          <p className="text-xl md:text-2xl text-primary-foreground/95 max-w-4xl mx-auto font-light">
+          
+          {/* Tagline */}
+          <h1 className="text-2xl md:text-3xl lg:text-4xl text-primary-foreground/95 max-w-3xl mx-auto font-light leading-relaxed">
             E-commerce & Retail Partnership for Premium Brands
-          </p>
+          </h1>
         </div>
       </section>
 
