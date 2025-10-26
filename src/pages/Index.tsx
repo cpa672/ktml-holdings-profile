@@ -1,27 +1,24 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import heroImage from "@/assets/hero-image.jpg";
+
 import logoPlaceholder from "@/assets/logo-placeholder.png";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/90 to-primary/70" />
-        </div>
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-primary to-accent/20">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-accent/10 via-transparent to-transparent" />
         
         <div className="relative z-10 container mx-auto px-6 text-center animate-fade-in">
-          <img 
-            src={logoPlaceholder} 
-            alt="KTML Holdings Logo" 
-            className="w-24 h-24 mx-auto mb-8 object-contain"
-          />
+          <div className="w-32 h-32 mx-auto mb-8 bg-white rounded-2xl shadow-2xl p-6 flex items-center justify-center">
+            <img 
+              src={logoPlaceholder} 
+              alt="KTML Holdings Logo" 
+              className="w-full h-full object-contain"
+            />
+          </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 tracking-tight">
             KTML Holdings
           </h1>
