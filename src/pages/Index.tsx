@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
-import logo from "@/assets/logo.png";
+import logo from "@/assets/Logo.png";
 
 const Index = () => {
   return (
