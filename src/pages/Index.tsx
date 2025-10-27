@@ -48,7 +48,7 @@ const Index = () => {
 
       {/* Contact Section */}
       <section className="py-16 md:py-24 bg-secondary/30">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-4xl px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 md:mb-16 text-foreground">
             Get in Touch
           </h2>
