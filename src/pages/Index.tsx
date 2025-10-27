@@ -47,7 +47,7 @@ const Index = () => {
       </section>
 
       {/* Core Strengths Section */}
-      <section className="pb-16 md:pb-24 px-4 md:px-6">
+      <section className="px-4 md:px-6">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 md:mb-16 text-foreground">
             Our Partnership Value
@@ -99,7 +99,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="pb-16 md:pb-24 bg-secondary/30">
+      <section className="py-12 md:py-16 bg-secondary/30">
         <div className="container mx-auto max-w-4xl px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 md:mb-16 text-foreground">
             Get in Touch
