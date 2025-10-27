@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Globe, ShieldCheck, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -43,6 +43,58 @@ const Index = () => {
               consistent brand representation across marketplaces.
             </p>
           </Card>
+        </div>
+      </section>
+
+      {/* Core Strengths Section */}
+      <section className="py-16 md:py-24 px-4 md:px-6">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 md:mb-16 text-foreground">
+            Our Partnership Value
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {/* Strength 1 */}
+            <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
+              <div className="flex flex-col items-center text-center">
+                <Globe className="w-12 h-12 text-accent mb-4" />
+                <h3 className="font-semibold text-xl mb-3 text-foreground">
+                  Multi-Channel Expertise
+                </h3>
+                <p className="text-muted-foreground">
+                  We specialize in marketplace and e-commerce distribution, 
+                  ensuring your brand reaches its target audience effectively.
+                </p>
+              </div>
+            </Card>
+            
+            {/* Strength 2 */}
+            <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
+              <div className="flex flex-col items-center text-center">
+                <ShieldCheck className="w-12 h-12 text-accent mb-4" />
+                <h3 className="font-semibold text-xl mb-3 text-foreground">
+                  Brand Integrity
+                </h3>
+                <p className="text-muted-foreground">
+                  We are committed to protecting your brand with strict 
+                  MAP policy enforcement and listing optimization.
+                </p>
+              </div>
+            </Card>
+            
+            {/* Strength 3 */}
+            <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
+              <div className="flex flex-col items-center text-center">
+                <DollarSign className="w-12 h-12 text-accent mb-4" />
+                <h3 className="font-semibold text-xl mb-3 text-foreground">
+                  Financial Partnership
+                </h3>
+                <p className="text-muted-foreground">
+                  As a well-capitalized retail group, we ensure prompt 
+                  payments and build long-term, reliable partnerships.
+                </p>
+              </div>
+            </Card>
+          </div>
         </div>
       </section>
 
