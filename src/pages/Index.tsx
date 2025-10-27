@@ -33,7 +33,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-16 md:py-24 px-4 md:px-6">
+      <section className="py-16 md:py-24">
         <div className="container mx-auto max-w-4xl">
           <Card className="p-6 md:p-12 shadow-[var(--shadow-elegant)] border-border/50 animate-fade-in-delay">
             <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
@@ -47,7 +47,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 md:py-24 px-4 md:px-6 bg-secondary/30">
+      <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 md:mb-16 text-foreground">
             Get in Touch
