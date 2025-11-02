@@ -58,7 +58,8 @@ const Index = () => {
               <div className="flex flex-col items-center text-center">
                 <BarChart2 className="w-12 h-12 text-accent mb-4" />
                 <h3 className="font-semibold text-xl mb-3 text-foreground">
-                  Data-Driven Channel Growth
+                  Data-Driven
+                  Channel Growth
                 </h3>
                 <p className="text-muted-foreground">
                   We use analytics, A/B tests, and targeted advertising to optimize listings,
