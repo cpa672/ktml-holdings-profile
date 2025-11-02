@@ -113,9 +113,12 @@ const Index = () => {
                   <Mail className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                   <div className="min-w-0">
                     <h3 className="font-semibold text-lg mb-2 text-foreground">Email</h3>
-                    <span className="text-muted-foreground md:hover:text-accent transition-colors break-words block md:inline">
+                    <a 
+                      href="mailto:partnerships@ktmlholdings.com" 
+                      className="text-muted-foreground hover:text-accent transition-colors break-words pointer-events-auto"
+                    >
                       partnerships@ktmlholdings.com
-                    </span>
+                    </a>
                   </div>
                 </div>
               </Card>
@@ -127,9 +130,12 @@ const Index = () => {
                   <Phone className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
                   <div className="min-w-0">
                     <h3 className="font-semibold text-lg mb-2 text-foreground">Phone</h3>
-                    <span className="text-muted-foreground md:hover:text-accent transition-colors block md:inline">
+                    <a 
+                      href="tel:+13232839499" 
+                      className="text-muted-foreground hover:text-accent transition-colors pointer-events-auto"
+                    >
                       (323) 283-9499
-                    </span>
+                    </a>
                   </div>
                 </div>
               </Card>
