@@ -62,7 +62,7 @@ const Index = () => {
                   Channel Growth
                 </h3>
                 <p className="text-muted-foreground">
-                  We use analytics, A/B tests, and targeted advertising to optimize listings,
+                  We use analytics, A/B tests, and targeted advertising to continiuosly optimize listings,
                   capture high-intent keywords, and increase conversion and Average Order Value
                 </p>
               </div>
