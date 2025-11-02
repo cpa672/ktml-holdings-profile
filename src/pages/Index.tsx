@@ -107,39 +107,37 @@ const Index = () => {
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
-            <a href="mailto:partnerships@ktmlholdings.com" className="md:pointer-events-none block">
-              <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300 cursor-pointer md:cursor-auto">
-                <div className="flex items-start space-x-4">
-                  <Mail className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
-                  <div className="min-w-0">
-                    <h3 className="font-semibold text-lg mb-2 text-foreground">Email</h3>
-                    <a 
-                      href="mailto:partnerships@ktmlholdings.com" 
-                      className="text-muted-foreground hover:text-accent transition-colors break-words pointer-events-auto"
-                    >
-                      partnerships@ktmlholdings.com
-                    </a>
-                  </div>
+            <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300 relative">
+              <a href="mailto:partnerships@ktmlholdings.com" className="md:hidden absolute inset-0" aria-label="Email partnerships@ktmlholdings.com" />
+              <div className="flex items-start space-x-4">
+                <Mail className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                <div className="min-w-0">
+                  <h3 className="font-semibold text-lg mb-2 text-foreground">Email</h3>
+                  <a 
+                    href="mailto:partnerships@ktmlholdings.com" 
+                    className="text-muted-foreground hover:text-accent transition-colors break-words relative z-10"
+                  >
+                    partnerships@ktmlholdings.com
+                  </a>
                 </div>
-              </Card>
-            </a>
+              </div>
+            </Card>
 
-            <a href="tel:+13232839499" className="md:pointer-events-none block">
-              <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300 cursor-pointer md:cursor-auto">
-                <div className="flex items-start space-x-4">
-                  <Phone className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
-                  <div className="min-w-0">
-                    <h3 className="font-semibold text-lg mb-2 text-foreground">Phone</h3>
-                    <a 
-                      href="tel:+13232839499" 
-                      className="text-muted-foreground hover:text-accent transition-colors pointer-events-auto"
-                    >
-                      (323) 283-9499
-                    </a>
-                  </div>
+            <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300 relative">
+              <a href="tel:+13232839499" className="md:hidden absolute inset-0" aria-label="Call (323) 283-9499" />
+              <div className="flex items-start space-x-4">
+                <Phone className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                <div className="min-w-0">
+                  <h3 className="font-semibold text-lg mb-2 text-foreground">Phone</h3>
+                  <a 
+                    href="tel:+13232839499" 
+                    className="text-muted-foreground hover:text-accent transition-colors relative z-10"
+                  >
+                    (323) 283-9499
+                  </a>
                 </div>
-              </Card>
-            </a>
+              </div>
+            </Card>
 
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300 md:col-span-2">
               <div className="flex items-start space-x-4">
