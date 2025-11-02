@@ -37,10 +37,10 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <Card className="p-6 md:p-12 shadow-[var(--shadow-elegant)] border-border/50 animate-fade-in-delay">
             <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
-              KTML Holdings is a multi-channel retail group based in Santa Monica, CA. 
-              We partner with premium brands to protect online presence, expand authorized 
-              distribution, and enforce MAP policies — enabling controlled growth and 
-              consistent brand representation across marketplaces.
+              KTML Holdings is an e-commerce strategy and wholesale group based in Santa Monica, CA.
+              Founded by professionals with 15+ years of experience in strategy, finance, product,
+              and Big-4 management consulting, we help premium brands transform Amazon from a risky,
+              price-driven channel into a controlled, data-driven, high-margin growth engine.
             </p>
           </Card>
         </div>
