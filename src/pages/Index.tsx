@@ -107,35 +107,33 @@ const Index = () => {
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
-            <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-start space-x-4">
-                <Mail className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
-                <div className="min-w-0">
-                  <h3 className="font-semibold text-lg mb-2 text-foreground">Email</h3>
-                  <a 
-                    href="mailto:partnerships@ktmlholdings.com" 
-                    className="text-muted-foreground hover:text-accent transition-colors break-words"
-                  >
-                    partnerships@ktmlholdings.com
-                  </a>
+            <a href="mailto:partnerships@ktmlholdings.com" className="md:pointer-events-none">
+              <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300 md:cursor-default cursor-pointer">
+                <div className="flex items-start space-x-4">
+                  <Mail className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                  <div className="min-w-0">
+                    <h3 className="font-semibold text-lg mb-2 text-foreground">Email</h3>
+                    <span className="text-muted-foreground md:hover:text-accent transition-colors break-words block md:inline">
+                      partnerships@ktmlholdings.com
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </a>
 
-            <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300">
-              <div className="flex items-start space-x-4">
-                <Phone className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
-                <div className="min-w-0">
-                  <h3 className="font-semibold text-lg mb-2 text-foreground">Phone</h3>
-                  <a 
-                    href="tel:+13232839499" 
-                    className="text-muted-foreground hover:text-accent transition-colors"
-                  >
-                    (323) 283-9499
-                  </a>
+            <a href="tel:+13232839499" className="md:pointer-events-none">
+              <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300 md:cursor-default cursor-pointer">
+                <div className="flex items-start space-x-4">
+                  <Phone className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                  <div className="min-w-0">
+                    <h3 className="font-semibold text-lg mb-2 text-foreground">Phone</h3>
+                    <span className="text-muted-foreground md:hover:text-accent transition-colors block md:inline">
+                      (323) 283-9499
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </a>
 
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300 md:col-span-2">
               <div className="flex items-start space-x-4">
