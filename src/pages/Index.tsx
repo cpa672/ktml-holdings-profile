@@ -57,7 +57,7 @@ const Index = () => {
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
               <div className="flex flex-col items-center text-center">
                 <BarChart2 className="w-12 h-12 text-accent mb-4" />
-                <h3 className="font-semibold text-xl mb-3 text-foreground">
+                <h3 className="font-semibold text-xl mb-3 text-foreground h-14 flex items-center justify-center">
                   Data-Driven
                   Channel Growth
                 </h3>
@@ -72,7 +72,7 @@ const Index = () => {
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
               <div className="flex flex-col items-center text-center">
                 <ShieldCheck className="w-12 h-12 text-accent mb-4" />
-                <h3 className="font-semibold text-xl mb-3 text-foreground">
+                <h3 className="font-semibold text-xl mb-3 text-foreground h-14 flex items-center justify-center">
                   Brand Integrity
                 </h3>
                 <p className="text-muted-foreground">
@@ -86,7 +86,7 @@ const Index = () => {
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
               <div className="flex flex-col items-center text-center">
                 <MessageSquareReply className="w-12 h-12 text-accent mb-4" />
-                <h3 className="font-semibold text-xl mb-3 text-foreground">
+                <h3 className="font-semibold text-xl mb-3 text-foreground h-14 flex items-center justify-center">
                   Actionable Customer Insights
                 </h3>
                 <p className="text-muted-foreground">
