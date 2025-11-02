@@ -58,11 +58,11 @@ const Index = () => {
               <div className="flex flex-col items-center text-center">
                 <Globe className="w-12 h-12 text-accent mb-4" />
                 <h3 className="font-semibold text-xl mb-3 text-foreground">
-                  Multi-Channel Expertise
+                  Data-Driven Channel Growth
                 </h3>
                 <p className="text-muted-foreground">
-                  We specialize in marketplace and e-commerce distribution, 
-                  ensuring your brand reaches its target audience effectively.
+                  We use analytics, A/B tests, and targeted advertising to optimize listings,
+                  capture high-intent keywords, and increase conversion and Average Order Value
                 </p>
               </div>
             </Card>
@@ -75,8 +75,8 @@ const Index = () => {
                   Brand Integrity
                 </h3>
                 <p className="text-muted-foreground">
-                  We are committed to protecting your brand with strict 
-                  MAP policy enforcement and listing optimization.
+                  24/7 MAP monitoring and escalation workflows plus prioritized reporting
+                  keep unauthorized sellers in check and protect your premium pricing and margins.
                 </p>
               </div>
             </Card>
@@ -86,11 +86,11 @@ const Index = () => {
               <div className="flex flex-col items-center text-center">
                 <DollarSign className="w-12 h-12 text-accent mb-4" />
                 <h3 className="font-semibold text-xl mb-3 text-foreground">
-                  Financial Partnership
+                  Actionable Customer Insights
                 </h3>
                 <p className="text-muted-foreground">
-                  As a well-capitalized retail group, we ensure prompt 
-                  payments and build long-term, reliable partnerships.
+                  We analyze your product reviews at scale and deliver monthly
+                  "Voice of the Customer" reports for product and cusomer experience improvement.
                 </p>
               </div>
             </Card>
