@@ -91,7 +91,7 @@ const Index = () => {
                 </h3>
                 <p className="text-muted-foreground">
                   We analyze your product reviews at scale and deliver monthly
-                  "Voice of the Customer" reports for product and customer experience improvement.
+                  Voice-of-the-Customer reports for product and CX improvements.
                 </p>
               </div>
             </Card>
