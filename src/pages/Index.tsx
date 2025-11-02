@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Globe, ShieldCheck, DollarSign } from "lucide-react";
+import { Mail, Phone, MapPin, Globe, ShieldCheck, DollarSign, BarChart2, MessageSquareReply } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -56,7 +56,7 @@ const Index = () => {
             {/* Strength 1 */}
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
               <div className="flex flex-col items-center text-center">
-                <Globe className="w-12 h-12 text-accent mb-4" />
+                <BarChart2 className="w-12 h-12 text-accent mb-4" />
                 <h3 className="font-semibold text-xl mb-3 text-foreground">
                   Data-Driven Channel Growth
                 </h3>
@@ -84,13 +84,13 @@ const Index = () => {
             {/* Strength 3 */}
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
               <div className="flex flex-col items-center text-center">
-                <DollarSign className="w-12 h-12 text-accent mb-4" />
+                <MessageSquareReply className="w-12 h-12 text-accent mb-4" />
                 <h3 className="font-semibold text-xl mb-3 text-foreground">
                   Actionable Customer Insights
                 </h3>
                 <p className="text-muted-foreground">
                   We analyze your product reviews at scale and deliver monthly
-                  "Voice of the Customer" reports for product and cusomer experience improvement.
+                  "Voice of the Customer" reports for product and customer experience improvement.
                 </p>
               </div>
             </Card>
