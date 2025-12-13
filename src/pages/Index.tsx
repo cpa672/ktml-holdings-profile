@@ -88,7 +88,7 @@ const Index = () => {
         <div className="bg-primary py-10 md:py-14 flex items-center">
           <div className="container mx-auto px-4 md:px-6 text-center animate-fade-in-delay">
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-primary-foreground/95 max-w-5xl mx-auto font-light leading-relaxed lg:whitespace-nowrap">
-              E-commerce & Retail Partnership for Premium Brands
+              Specialized Risk Transfer Solutions
             </h1>
           </div>
         </div>
