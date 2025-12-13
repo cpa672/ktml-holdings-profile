@@ -102,10 +102,10 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <Card className="p-6 md:p-12 shadow-[var(--shadow-elegant)] border-border/50 animate-fade-in-delay">
             <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
-              KTML Holdings is a boutique risk consultancy based in Santa Monica. We bridge the gap between operational
-              logistics reality and global insurance capital. Focusing exclusively on non-damage business interruption
-              (NDBI), we design parametric liquidity facilities that allow mid-market and enterprise shippers to hedge
-              against critical chokepoint delays.
+              KTML Holdings is a boutique risk advisory and structuring firm. We bridge the gap between complex
+              logistics operations and global insurance capital. Focusing on Non-Damage Business Interruption (NDBI), we
+              design parametric facilities that allow enterprise shippers to transfer systemic supply chain volatility
+              off their balance sheets.
             </p>
           </Card>
         </div>
@@ -126,7 +126,8 @@ const Index = () => {
                   Parametric Architecture
                 </h3>
                 <p className="text-muted-foreground">
-                  Designing binary triggers based on indisputable third-party data sources to eliminate claims friction.
+                  Engineering bespoke trigger mechanisms using third-party data oracles (IoT, Satellite, Governmental)
+                  to ensure indisputable settlement and eliminate claims friction.
                 </p>
               </div>
             </Card>
@@ -139,8 +140,8 @@ const Index = () => {
                   Capital Structuring
                 </h3>
                 <p className="text-muted-foreground">
-                  Interfacing with London Market and Bermuda capacity providers to secure rated backing for novel supply
-                  chain risks that traditional indemnity markets exclude.
+                  Accessing alternative risk capacity in London and Bermuda to underwrite operational exposures that
+                  traditional indemnity markets exclude.
                 </p>
               </div>
             </Card>
@@ -153,8 +154,8 @@ const Index = () => {
                   Basis Risk Optimization
                 </h3>
                 <p className="text-muted-foreground">
-                  Calibrating payout quantums against actual operational costs to minimize the gap between trigger
-                  events and balance sheet impact.
+                  Calibrating payout structures against economic impact models to minimize basis risk and maximize
+                  capital efficiency for the insured.
                 </p>
               </div>
             </Card>
