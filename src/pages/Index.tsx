@@ -1,14 +1,71 @@
-import { Mail, Phone, MapPin, Globe, ShieldCheck, DollarSign, BarChart2, MessageSquareReply } from "lucide-react";
+import { useState } from "react";
+import { Mail, Phone, MapPin, Globe, ShieldCheck, DollarSign, BarChart2, MessageSquareReply, LogIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 import logo from "@/assets/Logo.png";
 
 const Index = () => {
+  const [loginOpen, setLoginOpen] = useState(false);
+  const [showError, setShowError] = useState(false);
+
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    setShowError(true);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative flex flex-col overflow-hidden">
+        {/* Client Login Button */}
+        <div className="bg-background pt-2 md:pt-3 px-4 md:px-6">
+          <div className="container mx-auto flex justify-end">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              className="text-muted-foreground hover:text-foreground text-xs"
+              onClick={() => { setLoginOpen(true); setShowError(false); }}
+            >
+              <LogIn className="w-3 h-3 mr-1" />
+              Client Login
+            </Button>
+          </div>
+        </div>
+
+        {/* Login Dialog */}
+        <Dialog open={loginOpen} onOpenChange={setLoginOpen}>
+          <DialogContent className="sm:max-w-md top-[20%] translate-y-0">
+            <DialogHeader>
+              <DialogTitle>Client Login</DialogTitle>
+              <DialogDescription>
+                Enter your credentials to access your account.
+              </DialogDescription>
+            </DialogHeader>
+            <form onSubmit={handleLogin} className="space-y-4">
+              <div className="space-y-2">
+                <Label htmlFor="email">Email</Label>
+                <Input id="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="password">Password</Label>
+                <Input id="password" type="password" placeholder="••••••••" required />
+              </div>
+              {showError && (
+                <p className="text-sm text-destructive">
+                  Account not found or password mismatch. Please try again.
+                </p>
+              )}
+              <Button type="submit" className="w-full">
+                Sign In
+              </Button>
+            </form>
+          </DialogContent>
+        </Dialog>
+
         {/* Logo Area - White Background */}
         <div className="bg-background py-2 md:py-3">
           <div className="container mx-auto px-4 md:px-6 text-center animate-fade-in">
