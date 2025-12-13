@@ -94,10 +94,9 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <Card className="p-6 md:p-12 shadow-[var(--shadow-elegant)] border-border/50 animate-fade-in-delay">
             <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
-              KTML Holdings is an e-commerce strategy and wholesale group based in Santa Monica, CA.
-              Founded by professionals with 15+ years of experience in strategy, finance, product,
-              and Big-4 management consulting, we help premium brands transform Amazon from a risky,
-              price-driven channel into a controlled, data-driven, high-margin growth engine.
+              KTML Holdings is a boutique risk consultancy based in Santa Monica. 
+              We bridge the gap between operational logistics reality and global insurance capital. 
+              Focusing exclusively on non-damage business interruption (NDBI), we design parametric liquidity facilities that allow mid-market and enterprise shippers to hedge against critical chokepoint delays.
             </p>
           </Card>
         </div>
@@ -107,7 +106,7 @@ const Index = () => {
       <section className="px-4 md:px-6">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 md:mb-16 text-foreground">
-            Our Partnership Value
+            Core Capabilities
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Strength 1 */}
@@ -115,12 +114,10 @@ const Index = () => {
               <div className="flex flex-col items-center text-center">
                 <BarChart2 className="w-12 h-12 text-accent mb-4" />
                 <h3 className="font-semibold text-xl mb-3 text-foreground h-14 flex items-center justify-center">
-                  Data-Driven
-                  Channel Growth
+                  Parametric Architecture
                 </h3>
                 <p className="text-muted-foreground">
-                  We use analytics, A/B tests, and targeted advertising to continiuosly optimize listings,
-                  capture high-intent keywords, and increase conversion and Average Order Value
+                  Designing binary triggers based on indisputable third-party data sources to eliminate claims friction.
                 </p>
               </div>
             </Card>
@@ -130,11 +127,10 @@ const Index = () => {
               <div className="flex flex-col items-center text-center">
                 <ShieldCheck className="w-12 h-12 text-accent mb-4" />
                 <h3 className="font-semibold text-xl mb-3 text-foreground h-14 flex items-center justify-center">
-                  Brand Integrity
+                  Capital Structuring
                 </h3>
                 <p className="text-muted-foreground">
-                  24/7 MAP monitoring and escalation workflows plus prioritized reporting
-                  keep unauthorized sellers in check and protect your premium pricing and margins.
+                  Interfacing with London Market and Bermuda capacity providers to secure rated backing for novel supply chain risks that traditional indemnity markets exclude.
                 </p>
               </div>
             </Card>
@@ -144,11 +140,10 @@ const Index = () => {
               <div className="flex flex-col items-center text-center">
                 <MessageSquareReply className="w-12 h-12 text-accent mb-4" />
                 <h3 className="font-semibold text-xl mb-3 text-foreground h-14 flex items-center justify-center">
-                  Actionable Customer Insights
+                  Basis Risk Optimization
                 </h3>
                 <p className="text-muted-foreground">
-                  We analyze your product reviews at scale and deliver monthly
-                  Voice-of-the-Customer reports for product and customer experience improvements.
+                  Calibrating payout quantums against actual operational costs to minimize the gap between trigger events and balance sheet impact.
                 </p>
               </div>
             </Card>
@@ -160,7 +155,7 @@ const Index = () => {
       <section className="py-12 md:py-16 bg-secondary/30">
         <div className="container mx-auto max-w-4xl px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 md:mb-16 text-foreground">
-            Get in Touch
+            Inquiries
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
