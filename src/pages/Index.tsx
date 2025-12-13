@@ -1,5 +1,15 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Globe, ShieldCheck, DollarSign, BarChart2, MessageSquareReply, LogIn } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Globe,
+  ShieldCheck,
+  DollarSign,
+  BarChart2,
+  MessageSquareReply,
+  LogIn,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -24,11 +34,14 @@ const Index = () => {
         {/* Client Login Button */}
         <div className="bg-background pt-2 md:pt-3 px-4 md:px-6">
           <div className="container mx-auto flex justify-end">
-            <Button 
-              variant="ghost" 
-              size="sm" 
+            <Button
+              variant="ghost"
+              size="sm"
               className="text-muted-foreground hover:text-foreground text-xs"
-              onClick={() => { setLoginOpen(true); setShowError(false); }}
+              onClick={() => {
+                setLoginOpen(true);
+                setShowError(false);
+              }}
             >
               <LogIn className="w-3 h-3 mr-1" />
               Client Login
@@ -41,9 +54,7 @@ const Index = () => {
           <DialogContent className="sm:max-w-md top-[20%] translate-y-0">
             <DialogHeader>
               <DialogTitle>Client Login</DialogTitle>
-              <DialogDescription>
-                Enter your credentials to access your account.
-              </DialogDescription>
+              <DialogDescription>Enter your credentials to access your account.</DialogDescription>
             </DialogHeader>
             <form onSubmit={handleLogin} className="space-y-4">
               <div className="space-y-2">
@@ -55,9 +66,7 @@ const Index = () => {
                 <Input id="password" type="password" placeholder="••••••••" required />
               </div>
               {showError && (
-                <p className="text-sm text-destructive">
-                  Account not found or password mismatch. Please try again.
-                </p>
+                <p className="text-sm text-destructive">Account not found or password mismatch. Please try again.</p>
               )}
               <Button type="submit" className="w-full">
                 Sign In
@@ -70,15 +79,11 @@ const Index = () => {
         <div className="bg-background py-2 md:py-3">
           <div className="container mx-auto px-4 md:px-6 text-center animate-fade-in">
             <div className="max-w-sm mx-auto">
-              <img 
-                src={logo} 
-                alt="KTML Holdings - E-commerce & Retail Partnership" 
-                className="w-full h-auto"
-              />
+              <img src={logo} alt="KTML Holdings - E-commerce & Retail Partnership" className="w-full h-auto" />
             </div>
           </div>
         </div>
-        
+
         {/* Tagline Area - Solid Navy Background */}
         <div className="bg-primary py-10 md:py-14 flex items-center">
           <div className="container mx-auto px-4 md:px-6 text-center animate-fade-in-delay">
@@ -94,9 +99,10 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <Card className="p-6 md:p-12 shadow-[var(--shadow-elegant)] border-border/50 animate-fade-in-delay">
             <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
-              KTML Holdings is a boutique risk consultancy based in Santa Monica. 
-              We bridge the gap between operational logistics reality and global insurance capital. 
-              Focusing exclusively on non-damage business interruption (NDBI), we design parametric liquidity facilities that allow mid-market and enterprise shippers to hedge against critical chokepoint delays.
+              KTML Holdings is a boutique risk consultancy based in Santa Monica. We bridge the gap between operational
+              logistics reality and global insurance capital. Focusing exclusively on non-damage business interruption
+              (NDBI), we design parametric liquidity facilities that allow mid-market and enterprise shippers to hedge
+              against critical chokepoint delays.
             </p>
           </Card>
         </div>
@@ -121,7 +127,7 @@ const Index = () => {
                 </p>
               </div>
             </Card>
-            
+
             {/* Strength 2 */}
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
               <div className="flex flex-col items-center text-center">
@@ -130,11 +136,12 @@ const Index = () => {
                   Capital Structuring
                 </h3>
                 <p className="text-muted-foreground">
-                  Interfacing with London Market and Bermuda capacity providers to secure rated backing for novel supply chain risks that traditional indemnity markets exclude.
+                  Interfacing with London Market and Bermuda capacity providers to secure rated backing for novel supply
+                  chain risks that traditional indemnity markets exclude.
                 </p>
               </div>
             </Card>
-            
+
             {/* Strength 3 */}
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
               <div className="flex flex-col items-center text-center">
@@ -143,7 +150,8 @@ const Index = () => {
                   Basis Risk Optimization
                 </h3>
                 <p className="text-muted-foreground">
-                  Calibrating payout quantums against actual operational costs to minimize the gap between trigger events and balance sheet impact.
+                  Calibrating payout quantums against actual operational costs to minimize the gap between trigger
+                  events and balance sheet impact.
                 </p>
               </div>
             </Card>
@@ -151,80 +159,30 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-12 md:py-16 bg-secondary/30">
-        <div className="container mx-auto max-w-4xl px-4 md:px-6">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 md:mb-16 text-foreground">
-            Inquiries
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 mb-8 md:mb-12">
-            <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300 relative">
-              <a href="mailto:partnerships@ktmlholdings.com" className="md:hidden absolute inset-0" aria-label="Email partnerships@ktmlholdings.com" />
-              <div className="flex items-start space-x-4">
-                <Mail className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
-                <div className="min-w-0">
-                  <h3 className="font-semibold text-lg mb-2 text-foreground">Email</h3>
-                  <a 
-                    href="mailto:partnerships@ktmlholdings.com" 
-                    className="text-muted-foreground hover:text-accent transition-colors break-words relative z-10"
-                  >
-                    partnerships@ktmlholdings.com
-                  </a>
-                </div>
-              </div>
-            </Card>
+      {/* Footer / Contact Section - Simplified */}
+      <section className="py-16 md:py-24 bg-secondary/20 mt-16">
+        <div className="container mx-auto max-w-4xl px-4 md:px-6 text-center">
+          <h2 className="text-2xl font-semibold mb-8 text-foreground">Inquiries</h2>
 
-            <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300 relative">
-              <a href="tel:+13232839499" className="md:hidden absolute inset-0" aria-label="Call (323) 283-9499" />
-              <div className="flex items-start space-x-4">
-                <Phone className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
-                <div className="min-w-0">
-                  <h3 className="font-semibold text-lg mb-2 text-foreground">Phone</h3>
-                  <a 
-                    href="tel:+13232839499" 
-                    className="text-muted-foreground hover:text-accent transition-colors relative z-10"
-                  >
-                    (323) 283-9499
-                  </a>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50 hover:shadow-lg transition-shadow duration-300 md:col-span-2">
-              <div className="flex items-start space-x-4">
-                <MapPin className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
-                <div className="min-w-0">
-                  <h3 className="font-semibold text-lg mb-2 text-foreground">Address</h3>
-                  <address className="text-muted-foreground not-italic">
-                    KTML Holdings LLC<br />
-                    2801 Ocean Park Blvd<br />
-                    Unit #2370<br />
-                    Santa Monica, CA 90405
-                  </address>
-                </div>
-              </div>
-            </Card>
-          </div>
-
-          <div className="text-center">
-            <Button 
-              size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg hover:shadow-xl transition-all duration-300 text-base md:text-lg px-6 md:px-8 py-5 md:py-6 w-full md:w-auto"
-              asChild
-            >
-              <a href="mailto:partnerships@ktmlholdings.com">
-                Contact Partnerships
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 text-muted-foreground">
+            <div className="flex items-center gap-3">
+              <Mail className="w-5 h-5" />
+              <a href="mailto:partnerships@ktmlholdings.com" className="hover:text-foreground transition-colors">
+                partnerships@ktmlholdings.com
               </a>
-            </Button>
+            </div>
+            <div className="flex items-center gap-3">
+              <MapPin className="w-5 h-5" />
+              <span>Santa Monica, CA</span>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 md:px-6 border-t border-border">
-        <div className="container mx-auto text-center text-muted-foreground">
-          <p className="text-sm md:text-base">© {new Date().getFullYear()} KTML Holdings LLC. All rights reserved.</p>
+      <footer className="py-8 px-4 md:px-6 border-t border-border/40">
+        <div className="container mx-auto text-center text-muted-foreground/60 text-xs">
+          <p>© {new Date().getFullYear()} KTML Holdings LLC. All rights reserved. Private & Confidential.</p>
         </div>
       </footer>
     </div>
