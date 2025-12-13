@@ -8,6 +8,9 @@ import {
   DollarSign,
   BarChart2,
   MessageSquareReply,
+  Radar,
+  Landmark,
+  SlidersHorizontal,
   LogIn,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -118,7 +121,7 @@ const Index = () => {
             {/* Strength 1 */}
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
               <div className="flex flex-col items-center text-center">
-                <BarChart2 className="w-12 h-12 text-accent mb-4" />
+                <Radar className="w-12 h-12 text-accent mb-4" />
                 <h3 className="font-semibold text-xl mb-3 text-foreground h-14 flex items-center justify-center">
                   Parametric Architecture
                 </h3>
@@ -131,7 +134,7 @@ const Index = () => {
             {/* Strength 2 */}
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
               <div className="flex flex-col items-center text-center">
-                <ShieldCheck className="w-12 h-12 text-accent mb-4" />
+                <Landmark className="w-12 h-12 text-accent mb-4" />
                 <h3 className="font-semibold text-xl mb-3 text-foreground h-14 flex items-center justify-center">
                   Capital Structuring
                 </h3>
@@ -145,7 +148,7 @@ const Index = () => {
             {/* Strength 3 */}
             <Card className="p-6 md:p-8 shadow-[var(--shadow-elegant)] border-border/50">
               <div className="flex flex-col items-center text-center">
-                <MessageSquareReply className="w-12 h-12 text-accent mb-4" />
+                <SlidersHorizontal className="w-12 h-12 text-accent mb-4" />
                 <h3 className="font-semibold text-xl mb-3 text-foreground h-14 flex items-center justify-center">
                   Basis Risk Optimization
                 </h3>
