@@ -5,15 +5,17 @@
     
     <script type="text/javascript">
       (function(l) {
-        if (l.search[1] === '/' ) {
+        // This script checks if there is a 'p' parameter in the URL
+        if (l.search.indexOf('p=/') !== -1) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&')
           }).filter(function(v) {
             return v.indexOf('p=/') === 0
           })[0];
           if (decoded !== undefined) {
+            // This line removes the '?p=' and restores the clean URL (/commerce)
             window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded.slice(3) + l.hash
+              l.pathname.slice(0, (l.pathname.slice(-1) === '/' ? -1 : undefined)) + decoded.slice(3) + l.hash
             );
           }
         }
