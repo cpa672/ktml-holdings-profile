@@ -2,6 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).filter(function(v) {
+            return v.indexOf('p=/') === 0
+          })[0];
+          if (decoded !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded.slice(3) + l.hash
+            );
+          }
+        }
+      }(window.location))
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KTML Holdings | Specialized Risk Transfer</title>
     <meta name="description" content="KTML Holdings structures bespoke parametric facilities for global logistics and supply chain volatility.">
