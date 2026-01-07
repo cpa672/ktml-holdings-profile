@@ -39,8 +39,7 @@ const Index = () => {
             <p className="text-lg md:text-xl leading-relaxed text-foreground/90">
               KTML Holdings is an e-commerce strategy and wholesale group based in Santa Monica, CA.
               Founded by professionals with 15+ years of experience in strategy, finance, product,
-              and Big-4 management consulting, we help premium brands transform Amazon from a risky,
-              price-driven channel into a controlled, data-driven, high-margin growth engine.
+              and Big-4 management consulting, We help premium brands navigate and optimize complex marketplace ecosystems — transforming volatile, price-driven channels into controlled, data-driven, high-margin growth engines
             </p>
           </Card>
         </div>
