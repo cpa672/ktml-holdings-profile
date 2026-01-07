@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <title>KTML Holdings</title>
     <script type="text/javascript">
-      // This script takes the current URL path (like /commerce) and 
-      // redirects the browser back to the home page with that path as a hidden parameter.
-      var pathSegmentsToKeep = 0;
+      // This script takes the path (like /commerce) and redirects to the home page
+      // with the path stored in a 'p' parameter.
       var l = window.location;
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?p=/' +
-        l.pathname.split('/').slice(1 + pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        l.pathname.split('/').slice(0, 1).join('/') + '/?p=/' +
+        l.pathname.split('/').slice(1).join('/').replace(/&/g, '~and~') +
         (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
         l.hash
       );
